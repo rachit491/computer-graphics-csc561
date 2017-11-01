@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Frogger - by Rachit</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bottombar.css">
+	<!--Load three.js-->
+  	<script src="scripts/three.js"></script>
+  	<script src="scripts/MTLLoader.js"></script>
+  	<script src="scripts/OBJLoader.js"></script>
+  	<script src="scripts/CombinedCamera.js"></script>
+  	<script src="scripts/THREEx.KeyboardState.js"></script>
+  	<script src="scripts/Factory.js"></script>
+  	<script src="scripts/CollisionDetector.js"></script>
+  	<script src="scripts/Scene.js"></script>
+</head>
+
+<body onload="init()">
+	<div id="container"></div>
+	<div id="gameOver">GAME OVER!</div>
+	<div id="scoreKeeper">
+		<div id="score">
+			<span>Score: </span>
+			<span id="scoreno">0</span>
+		</div>
+		<div id="name">
+			<span>Frogger</span>
+		</div>
+		<div id="lives">
+			<span>Lives: </span>
+			<span id="rem">3</span>
+		</div>
+	</div>
+	<div id="instructions">
+		<span>
+			Arrow keys to move the frog/cube in forward, backward or sideways.
+			&emsp;
+			T - Top View
+			&emsp;
+			P - First Person View
+		</span>
+	</div>
+</body>
+</html>

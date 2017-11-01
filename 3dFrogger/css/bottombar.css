@@ -1,0 +1,58 @@
+#scoreKeeper {
+	width: 100%;
+	height: 5%;
+	top: 0;
+	position: absolute;
+	background: #ccc;
+	color: #000;
+	font-size: 1.5em;
+	opacity: 0.6;
+}
+
+#gameOver {
+	width: 100%;
+    padding-top: 10%;
+    height: 20%;
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    background: #000;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    display: none;
+}
+
+#score {
+	width: 28%;
+	padding: 0.5% 0;
+	padding-left: 2%;
+	float: left;
+	position: relative;
+}
+
+#name {
+	float: left;
+	padding: 0.5% 0;
+	text-align: center;
+    font-weight: bolder;
+    width: 40%;
+}
+
+#lives {
+	width: 28%;
+	padding: 0.5% 0;
+	padding-right: 2%;
+	float: right;
+	text-align: right;
+	position: relative;
+}
+
+#instructions {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    color: #fff;
+    text-align: center;
+}
