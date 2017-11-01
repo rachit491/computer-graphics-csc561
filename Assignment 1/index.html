@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CG Assignment 1 - Rachit</title>
+	<script type="text/javascript" src="raycast_final.js"></script>
+	<style type="text/css">
+		canvas {
+			background: #000;
+		}
+	</style>
+</head>
+
+<body onload="main()">
+	<canvas id="viewport" width="512" height="512"></canvas>
+	<form name="myForm">
+		<br>Please input floating point numbers only, I'm not validating this form.
+		<br><br>Canvas Size<br>
+		Widh: <input type="text" name="canvasX" id="canvasX" value="512" />
+		Height: <input type="text" name="canvasY" id="canvasY" value="512" />
+		<br><br><input type="checkbox" name="lights" value="lights"> Multiple Lights
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" name="shadows" value="shadows"> Shadows
+		<br><br>Eye Position<br>
+		x: <input type="text" name="eyeX" id="eyeX" value="0.5" />
+		y: <input type="text" name="eyeY" id="eyeY" value="0.5" />
+		z: <input type="text" name="eyeZ" id="eyeZ" value="-0.5" />
+		<!--br><br>View Up Vector<br>
+		x: <input type="text" name="upX" id="upX" value="0" />
+		y: <input type="text" name="upY" id="upY" value="1" />
+		z: <input type="text" name="upZ" id="upZ" value="0" />
+		<br><br>Look At Vector<br>
+		x: <input type="text" name="atX" id="atX" value="0" />
+		y: <input type="text" name="atY" id="atY" value="0" />
+		z: <input type="text" name="atZ" id="atZ" value="1" /-->
+	</form>
+	<br>
+	<button onClick="updateData()">Submit</button>
+</body>
+</hmtl>

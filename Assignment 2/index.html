@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>CG Assignment 2 - Rachit</title>
+	<!-- To inlude GLMatrix library -->
+	<script type="text/javascript" src="gl-matrix.js"></script>
+	<script type="text/javascript" src="rasterization.js"></script>
+	
+</head>
+
+<body onload="main()">
+	<canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+	<form name="myForm">
+		<br>Please input floating point numbers only, I'm not validating this form.
+		<br><br>Canvas Size<br>
+		Widh: <input type="text" name="canvasX" id="canvasX" value="512" />
+		Height: <input type="text" name="canvasY" id="canvasY" value="512" />
+	</form>
+	<br>
+	<button onClick="updateData()">Submit</button>
+	<p>
+	Light at [2,4,-0.5] <br> <br>
+
+	Key info - <br>
+	a and d - translate view left and right along view X <br>
+	w and s - translate view forward and backward along view Z <br>
+	q and e - translate view up and down along view Y <br>
+	A and D - rotate view left and right around view Y (yaw) <br>
+	W and S - rotate view forward and backward around view X (pitch) <br>
+	Q and E - rotate selection (counter-)clockwise around view Z (roll) <br>
+	escape - undo all view changes; restore default view <br> <br>
+
+	left and right - select and highlight the next/previous triangle set (previous off) <br>
+	up and down - select and highlight the next/previous sphere (previous off) <br>
+	space - deselect and turn off highlight <br>
+	k and ; - translate selection left and right along view X <br>
+	o and l - translate selection forward and backward along view Z <br>
+	i and p - translate selection up and down along view Y <br>
+	K and : - rotate selection left and right around view Y (yaw) <br>
+	O and L - rotate selection forward and backward around view X (pitch) <br>
+	I and P - rotate selection clockwise and counterclockwise around view Z (roll) <br>
+	backspace - undo all sphere and triangle transformations <br>
+</body>
+</hmtl>

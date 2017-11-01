@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CG Assignment 3 - Rachit</title>
+    
+    <link type="text/css" rel="stylesheet" href="rasterize.css" />
+
+    <script type="text/javascript" src="gl-matrix.js"></script>
+    <script type="text/javascript" src="rasterize.js"></script>
+  </head>
+
+  <body onload="main()">
+  <form name="myForm">
+      Canvas Size<br>
+      Widh: <input type="text" name="canvasX" id="canvasX" value="512" />
+      Height: <input type="text" name="canvasY" id="canvasY" value="512" />
+      <br><br>
+      Win Left: <input type="text" name="win_left" id="win_left" value="0" />
+      Win Right: <input type="text" name="win_right" id="win_right" value="1" />
+      Win Bottom: <input type="text" name="win_bottom" id="win_bottom" value="0" />
+      Win Top: <input type="text" name="win_top" id="win_top" value="1" />
+    </form>
+    <br>
+    <button onClick="updateData()">Submit</button>
+    <br>
+    <canvas id="myImageCanvas" width="512" height="512"></canvas>
+    <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+  </body>
+</html>
